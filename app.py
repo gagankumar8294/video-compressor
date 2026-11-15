@@ -568,7 +568,8 @@ HTML_TEMPLATE = """
 
 @app.route('/')
 def index():
-    return render_template_string(HTML_TEMPLATE)
+    return send_file(BASE_DIR / 'index.html')
+
 
 def run_compression_worker(job_id, in_path, out_path, desktop_path, codec, quality_preset):
     jobs[job_id]["status"] = "processing"

@@ -1,0 +1,8 @@
+bin/
+compressed/
+test_run/
+*.mp4
+*.mkv
+*.mov
+*.avi
+__pycache__/
